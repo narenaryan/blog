@@ -42,7 +42,7 @@
 .highlight pre .ne { color: #bbbbbb } /* Name.Exception */
 .highlight pre .nf { color: #447fcf } /* Name.Function */
 .highlight pre .nl { color: #d0d0d0 } /* Name.Label */
-.highlight pre .nn { color: #447fcf; text-decoration: underline } /* Name.Namespace */
+.highlight pre .nn { color: #447fcf;} /* Name.Namespace */
 .highlight pre .nx { color: #d0d0d0 } /* Name.Other */
 .highlight pre .py { color: #d0d0d0 } /* Name.Property */
 .highlight pre .nt { color: #6ab825; font-weight: bold } /* Name.Tag */
