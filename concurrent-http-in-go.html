@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>Cook JavaScript faster with CoffeeScript - Jinchuriki</title>
+    <title>Making concurrent HTTP requests in Go programming language - Jinchuriki</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -14,23 +14,20 @@
 <link rel="image_src" href="">
 
         <meta name="author" content="Naren Arya" />
-        <meta name="keywords" content="javascript,js,programming,coding,web,coffeescript,coffeejs" />
-        <meta name="description" content="CoffeeScript is a good tool to write Javascript without hassle" />
+        <meta name="keywords" content="golang,programming,concurrent programming,http requests" />
+        <meta name="description" content="Unleash the power of Go with concurrent programming" />
 
         <meta property="og:site_name" content="Jinchuriki" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Cook JavaScript faster with CoffeeScript"/>
-        <meta property="og:url" content="/cook-javascript.html"/>
-        <meta property="og:description" content="CoffeeScript is a good tool to write Javascript without hassle"/>
-        <meta property="article:published_time" content="2016-01-08" />
-            <meta property="article:section" content="javascript" />
-            <meta property="article:tag" content="javascript" />
-            <meta property="article:tag" content="js" />
+        <meta property="og:title" content="Making concurrent HTTP requests in Go programming language"/>
+        <meta property="og:url" content="/concurrent-http-in-go.html"/>
+        <meta property="og:description" content="Unleash the power of Go with concurrent programming"/>
+        <meta property="article:published_time" content="2016-06-05" />
+            <meta property="article:section" content="golang" />
+            <meta property="article:tag" content="golang" />
             <meta property="article:tag" content="programming" />
-            <meta property="article:tag" content="coding" />
-            <meta property="article:tag" content="web" />
-            <meta property="article:tag" content="coffeescript" />
-            <meta property="article:tag" content="coffeejs" />
+            <meta property="article:tag" content="concurrent programming" />
+            <meta property="article:tag" content="http requests" />
             <meta property="article:author" content="Naren Arya" />
 
     <meta name="twitter:card" content="summary">
@@ -67,6 +64,9 @@
                             <a href="/category/chess.html">Chess</a>
                         </li>
                         <li class="active">
+                            <a href="/category/golang.html">Golang</a>
+                        </li>
+                        <li >
                             <a href="/category/javascript.html">Javascript</a>
                         </li>
                         <li >
@@ -103,10 +103,10 @@
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="/cook-javascript.html"
+                    <a href="/concurrent-http-in-go.html"
                        rel="bookmark"
-                       title="Permalink to Cook JavaScript faster with CoffeeScript">
-                        Cook JavaScript faster with CoffeeScript
+                       title="Permalink to Making concurrent HTTP requests in Go programming language">
+                        Making concurrent HTTP requests in Go programming language
                     </a>
                 </h1>
             </header>
@@ -116,7 +116,7 @@
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-01-08T15:16:01+05:30"> Fri 08 January 2016</time>
+        <i class="fa fa-calendar"></i><time datetime="2016-06-05T15:16:01+05:30"> Sun 05 June 2016</time>
     </span>
             <span class="label label-default">By</span>
             <a href="/author/naren-arya.html"><i class="fa fa-user"></i> Naren Arya</a>
@@ -124,19 +124,13 @@
 
 
 <span class="label label-default">Tags</span>
-	<a href="/tag/javascript.html">javascript</a>
-        /
-	<a href="/tag/js.html">js</a>
+	<a href="/tag/golang.html">golang</a>
         /
 	<a href="/tag/programming.html">programming</a>
         /
-	<a href="/tag/coding.html">coding</a>
+	<a href="/tag/concurrent-programming.html">concurrent programming</a>
         /
-	<a href="/tag/web.html">web</a>
-        /
-	<a href="/tag/coffeescript.html">coffeescript</a>
-        /
-	<a href="/tag/coffeejs.html">coffeejs</a>
+	<a href="/tag/http-requests.html">http requests</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
@@ -144,11 +138,12 @@
 Begin your post content here
 -->
 
-<p><img src="../images/coffee.png" height="300px width="300px"></p>
-<h2>up and running with CoffeeScript</h2>
-<p>CoffeeScript. It is untouched apple for people who never looked out of JS. CoffeeScript is not a new language. It is a mini-language that compiles a coffeeScript to JavaScript. It is a transpiler. I will justify my title with explaining the few basics of CoffeeScript.</p>
-<h1>Introduction</h1>
-<p>In simple words CoffeeScript is a language in which you write constructs those can be straightaway compiled to JavaScript. Then why not write straight in JS. CoffeeScript constructs are similar to Python. Simple and Precise. The straight benefits of using CoffeeScript are: </p>
+<p><img src="../images/concur.jpg" height="400px width="600px"></p>
+<h2>Why to use concurrent programming?</h2>
+<p>All the high level programming languages runs on single core of the machine. Go is the modern programming language that gives us freedom to write idiomatic code. It is a programming language to write applications those unleash the power of multi cores with a C++ grade performance. In this short article we can see how to make parllel requests in Go.</p>
+<h1>Problem</h1>
+<p>The problem here is to make HTTP reuests for a set of URL and list them according to the order and time of executions.</p>
+<p>If we use traditional high level programming languages Python or JavaScript, we can just execute one operation at a time i.e sequential program execution happens. Let us see the code of Python first and time of execution.</p>
 <ul>
 <li>Simplicity.</li>
 <li>Compatibility with JS libraries.</li>
@@ -277,8 +272,8 @@ menu i + 1, dish for dish, i in courses
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
             var disqus_shortname = 'blognarenaryain'; // required: replace example with your forum shortname
 
-                    var disqus_identifier = 'cook-javascript';
-                var disqus_url = '/cook-javascript.html';
+                    var disqus_identifier = 'concurrent-http-in-go';
+                var disqus_url = '/concurrent-http-in-go.html';
 
             var disqus_config = function () {
                 this.language = "en";
@@ -326,6 +321,11 @@ menu i + 1, dish for dish, i in courses
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
+                        <a href="/concurrent-http-in-go.html">
+                            Making concurrent HTTP requests in Go programming language
+                        </a>
+                    </li>
+                    <li class="list-group-item">
                         <a href="/exploring-js-es6-features.html">
                             Exploring ES6 features in JavaScript
                         </a>
@@ -343,11 +343,6 @@ menu i + 1, dish for dish, i in courses
                     <li class="list-group-item">
                         <a href="/angular-js-quick-introduction.html">
                             Exploring the beautiful world of Angular JS
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="/right-way-django-authentication.html">
-                            Right way of adding user authentication to Django
                         </a>
                     </li>
                 </ul>
