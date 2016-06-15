@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>Disaster capitalism at it's peak? - Jinchuriki</title>
+    <title>Golang Tips and Tricks to Crack Competitive programming - Jinchuriki</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -11,26 +11,25 @@
 
     <link href="/images/naruto.ico" rel="icon">
 
-<link rel="image_src" href="/images/197.jpg">
+<link rel="image_src" href="">
 
         <meta name="author" content="Naren Arya" />
-        <meta name="keywords" content="US,economics,wars,free markets,global economies,corporate frauds,disaster capitalism" />
-        <meta name="description" content="Private organizations are trying to capitalize on shocks occurs to the people." />
+        <meta name="keywords" content="golang,programming,tips and tricks,hackerrank,golanguage,competitive programming" />
+        <meta name="description" content="Know basic Golang elements to make you ready for competitive programming" />
 
         <meta property="og:site_name" content="Jinchuriki" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Disaster capitalism at it&#39;s peak?"/>
-        <meta property="og:url" content="/disaster-capitalism-at-its-best.html"/>
-        <meta property="og:description" content="Private organizations are trying to capitalize on shocks occurs to the people."/>
-        <meta property="article:published_time" content="2016-03-08" />
-            <meta property="article:section" content="pollitics" />
-            <meta property="article:tag" content="US" />
-            <meta property="article:tag" content="economics" />
-            <meta property="article:tag" content="wars" />
-            <meta property="article:tag" content="free markets" />
-            <meta property="article:tag" content="global economies" />
-            <meta property="article:tag" content="corporate frauds" />
-            <meta property="article:tag" content="disaster capitalism" />
+        <meta property="og:title" content="Golang Tips and Tricks to Crack Competitive programming"/>
+        <meta property="og:url" content="/tips-tricks-go.html"/>
+        <meta property="og:description" content="Know basic Golang elements to make you ready for competitive programming"/>
+        <meta property="article:published_time" content="2016-06-14" />
+            <meta property="article:section" content="golang" />
+            <meta property="article:tag" content="golang" />
+            <meta property="article:tag" content="programming" />
+            <meta property="article:tag" content="tips and tricks" />
+            <meta property="article:tag" content="hackerrank" />
+            <meta property="article:tag" content="golanguage" />
+            <meta property="article:tag" content="competitive programming" />
             <meta property="article:author" content="Naren Arya" />
 
     <meta name="twitter:card" content="summary">
@@ -66,13 +65,13 @@
                         <li >
                             <a href="/category/chess.html">Chess</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="/category/golang.html">Golang</a>
                         </li>
                         <li >
                             <a href="/category/javascript.html">Javascript</a>
                         </li>
-                        <li class="active">
+                        <li >
                             <a href="/category/pollitics.html">Pollitics</a>
                         </li>
                         <li >
@@ -106,10 +105,10 @@
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="/disaster-capitalism-at-its-best.html"
+                    <a href="/tips-tricks-go.html"
                        rel="bookmark"
-                       title="Permalink to Disaster capitalism at it's peak?">
-                        Disaster capitalism at it's peak?
+                       title="Permalink to Golang Tips and Tricks to Crack Competitive programming">
+                        Golang Tips and Tricks to Crack Competitive programming
                     </a>
                 </h1>
             </header>
@@ -119,7 +118,7 @@
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-03-08T00:00:00+05:30"> Tue 08 March 2016</time>
+        <i class="fa fa-calendar"></i><time datetime="2016-06-14T15:16:01+05:30"> Tue 14 June 2016</time>
     </span>
             <span class="label label-default">By</span>
             <a href="/author/naren-arya.html"><i class="fa fa-user"></i> Naren Arya</a>
@@ -127,19 +126,17 @@
 
 
 <span class="label label-default">Tags</span>
-	<a href="/tag/us.html">US</a>
+	<a href="/tag/golang.html">golang</a>
         /
-	<a href="/tag/economics.html">economics</a>
+	<a href="/tag/programming.html">programming</a>
         /
-	<a href="/tag/wars.html">wars</a>
+	<a href="/tag/tips-and-tricks.html">tips and tricks</a>
         /
-	<a href="/tag/free-markets.html">free markets</a>
+	<a href="/tag/hackerrank.html">hackerrank</a>
         /
-	<a href="/tag/global-economies.html">global economies</a>
+	<a href="/tag/golanguage.html">golanguage</a>
         /
-	<a href="/tag/corporate-frauds.html">corporate frauds</a>
-        /
-	<a href="/tag/disaster-capitalism.html">disaster capitalism</a>
+	<a href="/tag/competitive-programming.html">competitive programming</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
@@ -147,59 +144,132 @@
 Begin your post content here
 -->
 
-<p><img src="/images/197.jpg" height="400px" width="600px"></p>
-<p><link rel="image_src" href="/images/197.jpg"></p>
-<blockquote>
-    All private corporations are trying to make money on simualted world crysis.  
-</blockquote>
+<p><img src="../images/gophers1.jpg" height="300px width="400px"></p>
+<h1>Introduction</h1>
+<p>The code challenging platforms like HackerRank or CodeEval tests the logical ability and programming ability of a coder. Dynamic languages gives us the edge in developing programs faster. The algorithms which require huge computation may lead to timeouts with interpreters. Go is a compiled and disciplined language which can do very well in the competitive programming world. Beginners always feel hard to start Go because it is so strict. At the same time it is so sweet with type inferences and out of box built-in library.</p>
+<p>These are the most essential things you need to know before jumpstart coding in Golang.</p>
+<h2>Input and Output</h2>
+<p>Even though many tutorials describes many ways to read input and print output, still beginners of Golang finds it hard to start. So I will cover the basic input/output pattern in Golang.</p>
+<h3>Taking a line of input and displaying it</h3>
+<script src="https://gist.github.com/narenaryan/21d95b4f11e3b85a0ee0f21eacfa0704.js"></script>
 
-<p>We all know capitalism. Establishing business through reforms and other plans. In these days, the concept of globalization and free markets are going to take new forms. In fact this trend of studying the global markets is started in the mid seventies. The experiments were made since then to use every situation to make money by few corporates in all the nations. But application of those studies have been applying recently.</p>
-<h3>What is Disaster Capitalism?</h3>
-<p>Disaster capitalism is a type of capitalism in which private corporates spring into and change the things which are looked after by the governments at time of a natural or artificial disaster or calamity in which people are panicked.</p>
-<p>In a single word we can say </p>
-<blockquote>
+<p>Input ends with return key</p>
+<div class="highlight"><pre><span class="nv">$ </span>go run input.go
+Gopher
+Hello Gopher
+</pre></div>
 
-At the time of a national crysis, disaster capitalism is a process of tactically privatizing the bodies which are traditionally under the governments. 
 
-</blockquote>
+<p>Above code just creates a <b>Reader</b> which is attached to STDIN. In order to accept input <b>ReadString</b> method is used. A new line (\n) is used here to identify the end of input.</p>
+<p>Now let us see the variations in printing to STDOUT</p>
+<div class="highlight"><pre>fmt.Println(&quot;Something......&quot;) // prints a new line after output
 
-<p><center><img src="/images/saleu.jpg"></center></p>
-<p>Naomi Klien, a social activist and an author clearly mentioned in her book <b><i>"The Shock Doctrine"</i></b> about how few private firms will be eagerly looking at calamities occur in the world to sell their products or transfer public wealth into the hands of few corporate giants.</p>
-<p>The Shock Doctrine is a very good writeup on how the economical policies of US and other developed countries favoring this kind of capitalism. Naomi is mainly concerned with the doubts that few corporates are the main reasons for</p>
-<div class="row">
-<div class="col-md-4">
+fmt.Printf(&quot;%d + %d = %d&quot;, x, y, z) // formats the output string as per adjustments
+
+str := fmt.Sprintf(&quot;%d + %d = %d&quot;, x, y, z) // used for interpolating values into a string
+</pre></div>
+
+
+<h2>Type Conversions</h2>
+<p>In any programming language type conversion is the most common thing. Let us see how we do type conversions in Go.</p>
+<script src="https://gist.github.com/narenaryan/3987f01fb74e4d5c55f7422d8f59586b.js"></script>
+
+<div class="highlight"><pre><span class="nv">$ </span>go run conversions.go
+<span class="m">34</span> 12.34 <span class="nb">false</span>
+</pre></div>
+
+
+<p>We can also convert an Integer, Float value to a string using <b>Iota</b> method of <b>strconv</b></p>
+<div class="highlight"><pre>i := 10
+strVal, _ = strconv.Iota(i)
+</pre></div>
+
+
+<p>If we observe carefully, all methods of strconv are returning two values not one. The first value is the actual result, whereas "_" contains the error message if the operation fails. If we plan to handle the error wisely then we can use it. If the operation is successful, it stores nil into err.</p>
+<div class="highlight"><pre>i := 10
+// Now you can use err if something goes wrong
+strVal, err = strconv.Iota(i)
+</pre></div>
+
+
+<h2>Make Array Slices Your Great Friend</h2>
+<p>In other programming languages, Arrays and Lists are main storing data structures of data. But in Go, you must use slices. Here frequent usage of slices is essential in competitive programming.</p>
+<script src="https://gist.github.com/narenaryan/01fab2bcc31efab65a33315d5404861e.js"></script>
+
+<div class="highlight"><pre><span class="nv">$ </span>go run slices_test.go
+<span class="o">[</span>Naren Saikiran manoj Harish<span class="o">]</span>
+<span class="o">[</span>Naren Saikiran manoj<span class="o">]</span>
+<span class="o">[</span>Naren manoj<span class="o">]</span>
+</pre></div>
+
+
+<p>Practice playing with slices more and more to get familiar with. One word of caution. The indexing of slice is immutable. You need to reassign new slice to existing one after an operation.</p>
+<h2>String Processing &amp; Cleaning</h2>
+<p>In any coding competition, we need to process strings a lot. String processing includes </p>
 <ul>
-<li>Unnecessary wars
-<li>Ignoring the climate change
-<li>Rise of gap between rich and poor
+<li>Trimming the spaces </li>
+<li>Splitting using separators</li>
 </ul>
-</div>
-<div class="col-md-8">
-<img src="/images/naomi.jpg" height="300px" width="400px">
-<link rel="image_src" href="/images/naomi.jpg">
-</div>
-</div>
+<p>Now we are going to see the most straightforward way of doing that. In coding challenges we usually input no of test cases and values for each test case.</p>
+<script src="https://gist.github.com/narenaryan/668d7a1830dbacd874e8c9233c6fdf65.js"></script>
 
-<h3>Is it good or bad?</h3>
-<p>For all the economic rules mankind has designed, there will be a limit of absorption and implementation. For example a very famous construction company can play tricks to privatize the government's public transport etc. But inorder to raise capitalism, if they virtually fund a war to capitualize the situation and construct bridges which got destroyed it is very bad principle to make money.   </p>
-<h3>Who started the idea of this shock doctrine?</h3>
-<div class="row">
-<div class="col-md-6">
-<img src="/images/friedman.jpg" height="300px" width="400px" align="left">
-<link rel="image_src" href="/images/friedman.jpg">
-</div>
-<div class="col-md-6" style="margin-top:15%">
-<b>Milton Friedman</b>, a nobel laurate in Economics who came from University of Chicago is the root for this idea. He is the father of the idea of disaster capitalism. He always believed that radicalstic free markets can reform the state instead of government funding all the things from education and health. He always favored a voucher based systems which allow private corporates to operate and generate wealth. His ideas and principles are widely followed by his disciples world wide. He adviced nations to privatize and reduce burden at the time of crysis or natural calamities. He showed a clean new start for life after disaster as a reason to <i>privatize</i> things.
-</div>
-</div>
+<div class="highlight"><pre><span class="nv">$ </span>go run string_process.go
+2
+<span class="m">12</span> <span class="m">23</span> 34
+<span class="o">[</span><span class="m">12</span> <span class="m">23</span> 34<span class="o">]</span>
+<span class="m">54</span> <span class="m">67</span> 78
+<span class="o">[</span><span class="m">54</span> <span class="m">67</span> 78<span class="o">]</span>
+</pre></div>
 
-<h3>Evil effects of uncontrolled disaster capitalism</h3>
-<p>The un ethical way of making money by private corporates includes making subtle, hidden capitalistic crimes which are given color of religion and other labels. The main concern is pushing the countries to wage wars to create virtual free markets. Gun suppliers and outsourced millitary can be examples for them. If we take US Iraqi war and New Orleans school reforms are two good different examples which falls under category of disaster capitalism. </p>
-<p>A prisoner when interrogated with extreme torture can easily forget his/her believed ideas and try to pass information available to interrogator. Similarly when a mass of people are tortured by losing everything by a naturaal calamity, these capitalists go there and try to rub their own business ideas and make people believe that "Start a clean new life with these new ideas". In my opinion these so called Shock doctrine <i>"capitalists"</i> are lobbying strongly to stop the reforms which avoid damage to climate change because they want disasters to happen. Their business won't go well when everything is peaceful.</p>
-<h3>Conclusion</h3>
-<p>The main motto of this article is to explain what is disaster capitalism and how it can be a danger chance of creating wealth in an absurd way by destroying governments,waging virtual wars between nations in the name of religion, allowing serious calamities due to climate change where these corporates can spring in and make money. We collectively be should be aware of all this side effects of disaster capitalism. Let us pledge that environment should be our first concern and there should not be any wars tearing global peace into parts.</p>
-<p>Jai Hind.  </p>
-<p>Thank you :). Drop a comment if you have any query at narenarya@live.com    </p>
+
+<p>So we have two methods for splitting and stripping of strings.</p>
+<blockquote>strings.TrimSpace(string)</blockquote>
+
+<blockquote>strings.Split(trimmed_stream, seperator)</blockquote>
+
+<p>These are equivalent to Python's <b>trim()</b> and <b>split()</b> builtin methods</p>
+<h2>Other Tricks</h2>
+<h3>Using Math library</h3>
+<p>While using <b>math</b> library of Golang, you should be careful about types of arguments passed and type the operation results. For example for finding Absolute value of a number, You need to pass a <b>float64</b> number to the math.Abs funtion.</p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="s">&quot;math&quot;</span>
+
+<span class="n">num</span> <span class="p">:</span><span class="o">=</span> <span class="o">-</span><span class="mi">10</span>
+
+<span class="n">absNum</span> <span class="p">:</span><span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">Abs</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">//</span> <span class="n">Throws</span> <span class="n">error</span> <span class="n">since</span> <span class="n">Abs</span> <span class="n">function</span> <span class="n">only</span> <span class="n">accept</span> <span class="n">float64</span>
+<span class="n">absNum</span> <span class="p">:</span><span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">Abs</span><span class="p">(</span><span class="n">float64</span><span class="p">(</span><span class="n">num</span><span class="p">))</span> <span class="o">//</span> <span class="n">fine</span><span class="err">!</span>
+</pre></div>
+
+
+<p>So you should always refer language manual to see type casting.</p>
+<h3>Using wild card format option in Printf</h3>
+<p>We all know that using format options we can customize the width and precision of output while using Printf.</p>
+<div class="highlight"><pre>n := 10.666
+fmt.Printf(&quot;%12.4f&quot;, n)
+</pre></div>
+
+
+<p>This actually tells Go to print a float value with 12 spaces width and round it to 4 floating points. But what if that 12 width should be supplied programatically. Here is a wildcard trick for that.</p>
+<div class="highlight"><pre>n,s := 10.666, 12
+fmt.Printf(&quot;%*.4f&quot;,s, n)
+</pre></div>
+
+
+<p>This produce the same output as above but has advantage of changing width dynamically. Here is an example called "printing staircase" where this trick will be useful.</p>
+<script src="https://gist.github.com/narenaryan/b772e6d09fd49636c342ef45c5c7768e.js"></script>
+
+<p>Output is a beautiful staircase.</p>
+<div class="highlight"><pre><span class="nv">$ </span>go run staircase.go
+5
+    <span class="c">#</span>
+   <span class="c">##</span>
+  <span class="c">###</span>
+ <span class="c">####</span>
+<span class="c">#####</span>
+</pre></div>
+
+
+<p>This article is an output for effort I went through while solving HackerRank. Send your comments to <b>narenarya@live</b> . If you really like this article share it and spread word.</p>
+<p>Thank You :)</p>
             </div>
             <!-- /.entry-content -->
     <hr/>
@@ -211,8 +281,8 @@ At the time of a national crysis, disaster capitalism is a process of tactically
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
             var disqus_shortname = 'blognarenaryain'; // required: replace example with your forum shortname
 
-                    var disqus_identifier = 'disaster-capitalism-at-its-best';
-                var disqus_url = '/disaster-capitalism-at-its-best.html';
+                    var disqus_identifier = 'tips-tricks-go';
+                var disqus_url = '/tips-tricks-go.html';
 
             var disqus_config = function () {
                 this.language = "en";
