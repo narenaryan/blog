@@ -1,8 +1,19 @@
-body {
-    padding-top: 70px;
-    font-size: 16px
+
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'Purisa';
+  src: url('../fonts/Purisa.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
+
+body {
+    font-family: 'Panton', Fallback, sans-serif;
+    padding-top: 70px;
+    font-size: 17px
+}
 
 
 #sidebar .list-group, #sidebar .list-group-item {
